@@ -1,0 +1,15 @@
+(executable
+ (public_name ocaml)
+ (name gtk)
+ (modules gtk)
+ (libraries ocaml lablgtk3 containers))
+
+(executable
+ (public_name textdemo)
+ (name textdemo)
+ (modules textdemo)
+ (libraries ocaml lablgtk3 containers))
+
+(env
+  (dev
+    (flags (:standard -warn-error -A))))
